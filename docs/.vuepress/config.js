@@ -37,6 +37,19 @@ export default defineUserConfig({
           {
             text: 'Home',
             link: '/'
+          },
+          {
+            text: 'Configuration',
+            children: [
+              '/configuration/loader.md',
+              '/configuration/settings-file.md',
+            ]
+          },
+          {
+            text: 'API Reference',
+            children: [
+              '/api/server-api.md'
+            ]
           }
         ]
       }
