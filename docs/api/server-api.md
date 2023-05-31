@@ -178,7 +178,7 @@ API:Fire('Inspection_Service_Move', {direction, speed})
 | speed | `number` | ✔ |
 
 ::: tip
-Use the Inspection Service Stop API below to stop the elevator from moving.
+Use the [Inspection Service Stop](#inspection-service-stop) API to stop the elevator from moving.
 :::
 
 ## Inspection Service Stop
