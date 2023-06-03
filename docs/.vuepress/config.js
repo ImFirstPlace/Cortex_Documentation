@@ -28,7 +28,8 @@ export default defineUserConfig({
             {
               text: 'API Reference',
               children: [
-                '/api/server-api.md'
+                '/api/server-invoke-api.md',
+                '/api/server-recieve-api.md'
               ]
             }
           ]
@@ -48,7 +49,8 @@ export default defineUserConfig({
           {
             text: 'API Reference',
             children: [
-              '/api/server-api.md'
+              '/api/server-invoke-api.md',
+              '/api/server-recieve-api.md'
             ]
           }
         ]
