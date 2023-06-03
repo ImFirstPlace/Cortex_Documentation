@@ -1,4 +1,4 @@
-# Server API
+# Server Invoke API
 
 **How to fetch the API**
 ```lua:no-line-numbers
