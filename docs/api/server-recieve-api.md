@@ -190,6 +190,7 @@ end
 | params.floor | `floor` |
 | params.direction | `queueDirection` |
 | params.type | **Interior** / **Exterior** |
+| params.eventData | `lanternEventData` |
 
 ::: tip
 `params.event` will return **Lantern_Inactive** when inactive.
