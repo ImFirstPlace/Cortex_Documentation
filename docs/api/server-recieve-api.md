@@ -191,6 +191,7 @@ end
 | params.direction | `queueDirection` |
 | params.type | **Interior** / **Exterior** |
 | params.eventData | `lanternEventData` |
+| params.conditionMet | `boolean` |
 
 ::: tip
 `params.event` will return **Lantern_Inactive** when inactive.
