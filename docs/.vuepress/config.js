@@ -31,6 +31,12 @@ export default defineUserConfig({
                 '/api/server-invoke-api.md',
                 '/api/server-recieve-api.md'
               ]
+            },
+            {
+              text: 'Setup',
+              children: [
+                '/setup/internal-plugins.md',
+              ]
             }
           ]
         },
@@ -51,6 +57,12 @@ export default defineUserConfig({
             children: [
               '/api/server-invoke-api.md',
               '/api/server-recieve-api.md'
+            ]
+          },
+          {
+            text: 'Setup',
+            children: [
+              '/setup/internal-plugins.md',
             ]
           }
         ]
