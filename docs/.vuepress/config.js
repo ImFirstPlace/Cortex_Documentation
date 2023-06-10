@@ -8,6 +8,7 @@ export default defineUserConfig({
   base: '/Cortex_Documentation/',
   theme: defaultTheme({
     colorMode: 'dark',
+    contributors: false,
     locales: {
       '/': {
         sidebar: {
