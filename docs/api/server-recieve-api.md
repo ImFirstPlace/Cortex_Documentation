@@ -188,7 +188,7 @@ end
 | params.state | **active** / **neutral** |
 | params.floor | `floor` |
 | params.direction | `queueDirection` |
-| params.type | **Interior** / **Exterior** |
+| params.type | **interior** / **exterior** |
 | params.eventData | `lanternEventData` |
 | params.conditionMet | `boolean` |
 
@@ -197,6 +197,7 @@ end
 API.Event:Connect(function(protocol, params)
     if protocol == 'onElevatorLanternApi' then
         if params.floor ~= indicatorFloor then return end
+        if params.type ~= 'exterior' then return end -- Exterior lantern
 		if params.state == 'active' then
 			if params.conditionMet then
 				setArrowDirection(params.direction)
