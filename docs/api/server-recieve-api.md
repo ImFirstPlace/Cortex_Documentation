@@ -185,7 +185,6 @@ end
 **Returns**
 | Parameter | Value |
 | --------- | ----- |
-| params.event | `lanternEvent` |
 | params.state | **active** / **neutral** |
 | params.floor | `floor` |
 | params.direction | `queueDirection` |
@@ -193,6 +192,18 @@ end
 | params.eventData | `lanternEventData` |
 | params.conditionMet | `boolean` |
 
-::: tip
-`params.event` will return **Lantern_Inactive** when inactive.
-:::
+**Code Example**
+```lua
+API.Event:Connect(function(protocol, params)
+    if protocol == 'onElevatorLanternApi' then
+        if params.floor ~= indicatorFloor then return end
+		if params.state == 'active' then
+			if params.conditionMet then
+				setArrowDirection(params.direction)
+			end
+		elseif params.state == 'neutral' then
+			setArrowDirection('N')
+		end
+    end
+end)
+```
