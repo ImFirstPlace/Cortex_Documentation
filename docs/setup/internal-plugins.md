@@ -82,15 +82,3 @@ end)
 ![](./images/image_004.png)
 
 # If you have reached this point & your test module works properly, congratulations!
-Let's move on to some more setup. For this next setup, we will be installing the Legacy door system. This is an incredibly easy task, and should take very little experience to do.
-
-##
-Just like before, follow steps 1 and 2. When you insert the module, name it `Door_Engine`. This is required for the plugin module to work.<br>
-![](./images/image_005.png)<br>
-This next step is the easiest. All you need to do is open the module, and copy & paste the code sample below into the module.
-```lua:no-line-numbers
-return require(13197567665)
-```
-::: tip NOTE
-The module asset ID [`13197567665`](https://create.roblox.com/marketplace/asset/13197567665) is the Legacy door system core module.
-:::
