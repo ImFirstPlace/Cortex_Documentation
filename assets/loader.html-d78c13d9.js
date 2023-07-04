@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-baf74798","path":"/configuration/loader.html","title":"Loader Script","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1686375743000},"filePathRelative":"configuration/loader.md"}');export{t as data};
