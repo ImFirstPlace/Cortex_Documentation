@@ -47,13 +47,24 @@ API:Fire('Stop', enabled)
 
 ## Add Call
 ```lua
-API:Fire('Add_Call', floor)
+API:Fire('Add_Call', floor) -- Car Call
 ```
 
 **Parameters**
 | Name | Type | Required |
 | ---- | ---- | -------- |
 | floor | `number` | ✔ |
+
+or
+
+```lua
+API:Fire('Add_Call', {floor, direction}) -- Hall Call
+```
+**Parameters**
+| Name | Type | Required | Values |
+| ---- | ---- | -------- | ------ |
+| floor | `number` | ✔ |
+| direction | `string` | ✔ | `U`, `D` |
 
 ## Add Hall Call
 ```lua
@@ -64,6 +75,7 @@ API:Fire('Add_Hall_Call', floor)
 | Name | Type | Required |
 | ---- | ---- | -------- |
 | floor | `number` | ✔ |
+
 
 ## Add Directional Hall Call
 ```lua
