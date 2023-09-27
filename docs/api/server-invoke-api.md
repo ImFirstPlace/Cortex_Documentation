@@ -58,7 +58,7 @@ API:Fire('Add_Call', floor) -- Car Call
 or
 
 ```lua
-API:Fire('Add_Call', {floor, direction}) -- Hall Call
+API:Fire('Add_Call', {call = floor, direction = direction}) -- Hall Call
 ```
 **Parameters**
 | Name | Type | Required | Values |
