@@ -66,28 +66,6 @@ API:Fire('Add_Call', {call = floor, direction = direction}) -- Hall Call
 | floor | `number` | ✔ |
 | direction | `string` | ✔ | `U`, `D` |
 
-## Add Hall Call
-```lua
-API:Fire('Add_Hall_Call', floor)
-```
-
-**Parameters**
-| Name | Type | Required |
-| ---- | ---- | -------- |
-| floor | `number` | ✔ |
-
-
-## Add Directional Hall Call
-```lua
-API:Fire('Add_Directional_Hall_Call', {floor, direction})
-```
-
-**Parameters**
-| Name | Type | Required | Values |
-| ---- | ---- | -------- | ------ |
-| floor | `number` | ✔ |
-| direction | `string` | ✔ | `U`, `D` |
-
 ## Door Open
 ```lua
 API:Fire('Door_Open', tableWithDoorSides)
